@@ -34,9 +34,7 @@ export default function PostView({
     // Returns null on first render, so the client and server match
     return null;
   }
-  if (value === 0) {
-    return;
-  }
+
   return (
     <article>
       <Link href={permalink}>
