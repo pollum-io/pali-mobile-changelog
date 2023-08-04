@@ -20,6 +20,7 @@ export default function PostView({
   content,
   createdAt,
   permalink,
+  value,
 }: Post) {
   const date = dayjs(createdAt || new Date()).format('D MMMM YYYY');
 
@@ -33,15 +34,17 @@ export default function PostView({
     // Returns null on first render, so the client and server match
     return null;
   }
-
+  if (value === 0) {
+    return;
+  }
   return (
     <article>
       <Link href={permalink}>
-        <h2 className="text-3xl font-bold hover:underline inline-block">
+        <h2 className="text-[#4CA1CF] text-3xl font-bold hover:underline inline-block">
           {title}
         </h2>
       </Link>
-      <p className="mt-1 text-sm text-gray-500">{date}</p>
+      <p className="mt-1 text-sm text-[#4F4F4F]">{date}</p>
       <div className="prose lg:prose-lg mx-auto max-w-6xl pt-4 pb-8">
         {config.data.type === 'local' && (
           <Markdown

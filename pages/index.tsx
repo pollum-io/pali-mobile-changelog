@@ -11,8 +11,8 @@ export default function Home({ posts }: { posts: Post[] }) {
     <Layout>
       <Sidebar posts={posts} />
       <div className="md:col-span-3">
-        {posts.map((post) => (
-          <PostView {...post} key={post.slug} />
+        {posts.map((post, key) => (
+          <PostView {...post} value={key} key={post.slug} />
         ))}
       </div>
     </Layout>

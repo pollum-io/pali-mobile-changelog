@@ -14,6 +14,7 @@ interface PostCommon {
   createdAt: number;
   title: string;
   content: string;
+  value: number;
 }
 
 export type Post = PostCommon & (LocalPost | NotionPost);

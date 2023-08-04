@@ -5,10 +5,10 @@ import NavMenu from './navMenu';
 
 export default function Header() {
   return (
-    <header className="bg-primary-light">
+    <header className="bg-[#162742]">
       <div className="flex items-center justify-between max-w-6xl p-8 mx-auto">
         <Link href="/" className="font-medium text-2xl">
-          <span className='flex gap-2'>
+          <span className="flex gap-2">
             {config.logo.image && (
               <img
                 src={config.logo.image}
@@ -16,14 +16,18 @@ export default function Header() {
                 alt={config.logo.text}
               />
             )}
-            <span>{config.logo.text}</span>
+            <span className="text-white">{config.logo.text}</span>
           </span>
         </Link>
         <NavMenu />
       </div>
       <div className="max-w-6xl p-8 mx-auto">
-        <h1 className="text-5xl font-medium mb-4">{config.header.title}</h1>
-        <p className="text-lg max-w-md">{config.header.description}</p>
+        <h1 className="text-5xl font-medium mb-4 text-white">
+          {config.header.title}
+        </h1>
+        <p className="text-lg max-w-md text-white">
+          {config.header.description}
+        </p>
       </div>
     </header>
   );

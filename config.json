@@ -1,42 +1,24 @@
 {
-  "data":{
+  "data": {
     "type": "local",
     "name": "data"
   },
   "meta": {
     "title": "Product Log - Home of your Product's changelogs",
-    "description": "Recent changes to your product and it's benefits",
+    "description": "Recent changes to Pali Wallet Mobile",
     "image": "/static/ProductLog.png"
   },
   "logo": {
     "image": "/static/logo.svg",
-    "text": "Product Log"
+    "text": "Changelog"
   },
   "header": {
     "title": "Changelog",
-    "description": "New updates and improvements to this project will be documented in this page.",
+    "description": "New updates and improvements for Pali Wallet Mobile.",
     "menu": [
       {
-        "name": "Services",
-        "children": [
-          {
-            "name": "Copywriting",
-            "link": "https://example.com"
-          },
-          {
-            "name": "UX Design",
-            "link": "https://example.com"
-          }
-        ]
-      },
-      {
         "name": "Contact",
-        "link": "https://example.com"
-      },
-      {
-        "name": "Sign Up",
-        "link": "https://example.com",
-        "type": "button"
+        "link": "https://discord.com/invite/syscoin"
       }
     ]
   },
@@ -47,15 +29,11 @@
         "links": [
           {
             "name": "Twitter",
-            "link": "https://example.com"
+            "link": "https://twitter.com/PaliWallet"
           },
           {
             "name": "GitHub",
-            "link": "https://example.com"
-          },
-          {
-            "name": "Discuss",
-            "link": "https://example.com"
+            "link": "https://github.com/syscoin/pali-mobile"
           }
         ]
       },
@@ -64,15 +42,11 @@
         "links": [
           {
             "name": "About",
-            "link": "https://example.com"
-          },
-          {
-            "name": "F.A.Q",
-            "link": "https://example.com"
+            "link": "https://paliwallet.com/"
           },
           {
             "name": "Contact",
-            "link": "https://example.com"
+            "link": "https://discord.com/invite/syscoin"
           }
         ]
       }
