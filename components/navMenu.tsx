@@ -9,12 +9,7 @@ interface Item {
   type?: string;
 }
 
-interface DropdownItem {
-  name: string;
-  children: Item[];
-}
-
-type Menu = Array<Item | DropdownItem>;
+type Menu = Array<Item>;
 
 const MobileMenu = ({ menu }: { menu: Menu }) => {
   return (
@@ -51,13 +46,9 @@ export default function NavMenu() {
 
   return (
     <nav className="flex gap-4">
-      {(config.header.menu as Menu).map((item) =>
-        'children' in item ? (
-          <DropdownMenuItem {...item} key={item.name} />
-        ) : (
-          <SimpleMenuItem {...item} key={item.name} />
-        )
-      )}
+      {(config.header.menu as Menu).map((item) => (
+        <SimpleMenuItem {...item} key={item.name} />
+      ))}
     </nav>
   );
 }
