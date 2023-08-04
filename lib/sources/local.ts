@@ -40,6 +40,7 @@ const getAllFiles = async (dir: string, basePath: string) => {
       createdAt,
       title: frontmatter?.title || title,
       content,
+      value: 1,
     });
   }
 

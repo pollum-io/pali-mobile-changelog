@@ -32,6 +32,7 @@ const getNotionPosts = async (id) => {
       createdAt: new Date(createdAt).getTime(),
       title,
       content: blocks,
+      value: 1,
     });
   }
 
