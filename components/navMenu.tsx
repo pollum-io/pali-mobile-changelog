@@ -41,7 +41,7 @@ export default function NavMenu() {
   const { width } = useWindowSize();
 
   if (width < 640) {
-    return <MobileMenu menu={config.header.menu as Menu} />;
+    return <></>;
   }
 
   return (
