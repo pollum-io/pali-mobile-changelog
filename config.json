@@ -4,12 +4,12 @@
     "name": "data"
   },
   "meta": {
-    "title": "Product Log - Home of your Product's changelogs",
+    "title": "Pali Wallet Changelog",
     "description": "Recent changes to Pali Wallet Mobile",
     "image": "/static/ProductLog.png"
   },
   "logo": {
-    "image": "/static/logo.svg",
+    "image": "/static/logo.png",
     "text": "Changelog"
   },
   "header": {
