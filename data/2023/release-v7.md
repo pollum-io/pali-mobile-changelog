@@ -1,10 +1,11 @@
 ---
 title: v1.1.1 Release
-createdAt: '2023-10-27'
+createdAt: '2023-10-31'
 ---
 
 <div style="display: flex; align-items: flex-start; flex-direction:column;">
   <div style="flex: 1;">
+    - Added onboarding tour
     - Bug fixes
   </div>
   
